@@ -48,6 +48,8 @@ const Cart = () => {
                 <h3 className='exercise-time'>Exercise time <span>000</span> seconds</h3>
 
                 <h3 className='break-time-count'>Break time <span>000</span> seconds</h3>
+
+                <button className='btn-activity'>Activity Completed</button>
             </div>
         </div>
     );

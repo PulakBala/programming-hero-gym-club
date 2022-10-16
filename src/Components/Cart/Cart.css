@@ -41,3 +41,11 @@
 .break-time-count{
     margin-right: 20px;
 }
+
+
+.btn-activity{
+    background-color: blue;
+    color: white;
+    padding:10px 70px;
+    margin-top: 60px;
+}

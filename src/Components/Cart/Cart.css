@@ -1,0 +1,28 @@
+.personal-info{
+    display: flex;
+}
+.name{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.personal-info img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.personal-details{
+    display: flex;
+    line-height: 0px;
+    padding:0px 10px;
+    justify-content: space-between;
+}
+.break-time{
+    display: flex;
+    padding:0px 10px;
+    line-height: 0px;
+    justify-content: space-between;
+}
+.break-time h3:hover{
+    background-color: blue;
+}

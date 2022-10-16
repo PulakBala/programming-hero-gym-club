@@ -4,7 +4,10 @@ import './Product.css'
 const Product = (props) => {
     const{name,picture,time} = props.product;
     return (
-        <div className='product'>
+       
+        <div>
+            
+            <div className='product'>
             <div className="product-info">
             <img src={picture} alt=""></img>
             <h4>{name}</h4>
@@ -14,7 +17,8 @@ const Product = (props) => {
                 <p>Add To List</p>
             </button>
         </div>
+        </div>
     );
 };
 
-export default Product;<h1>Hello Pulak</h1>
+export default Product;

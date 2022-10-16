@@ -40,6 +40,15 @@ const Cart = () => {
                     <h3>50s</h3>
                 </div>
             </div>
+
+
+            <div className="exercise-container">
+                <h2>Exercise Details</h2>
+
+                <h3 className='exercise-time'>Exercise time <span>000</span> seconds</h3>
+
+                <h3 className='break-time-count'>Break time <span>000</span> seconds</h3>
+            </div>
         </div>
     );
 };

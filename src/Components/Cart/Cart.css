@@ -17,12 +17,27 @@
     padding:0px 10px;
     justify-content: space-between;
 }
+.break-container h2{
+    margin-right: 106px;
+    margin-top: 50px;
+}
 .break-time{
     display: flex;
     padding:0px 10px;
     line-height: 0px;
     justify-content: space-between;
 }
-.break-time h3:hover{
-    background-color: blue;
+.break-time:hover h3{
+   color: rgb(30, 0, 255);
+}
+
+.exercise-container h2{
+    margin-top: 60px;
+    margin-right: 60px;
+}
+.exercise-time, .break-time-count{
+    margin-top: 40px;
+}
+.break-time-count{
+    margin-right: 20px;
 }

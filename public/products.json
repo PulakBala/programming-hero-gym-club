@@ -19,19 +19,7 @@
       "email": "jewelyork@sequitur.com",
       "phone": "+1 (983) 427-2353"
     },
-    {
-      "id": "633fcc51bfb853cc0564e5df",
-      "isActive": true,
-      "balance": "$3,609.34",
-      "picture": "https://images.unsplash.com/photo-1594882645126-14020914d58d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "time": 36,
-      "eyeColor": "green",
-      "name": "Murray Pearson",
-      "gender": "male",
-      "company": "BUGSALL",
-      "email": "murraypearson@bugsall.com",
-      "phone": "+1 (904) 513-3110"
-    },
+   
     {
       "id": "633fcc51ded9289c5a3cb873",
       "isActive": true,
@@ -45,19 +33,7 @@
       "email": "dollysandoval@phuel.com",
       "phone": "+1 (922) 573-2373"
     },
-    {
-      "id": "633fcc51d697558667f9db01",
-      "isActive": true,
-      "balance": "$1,986.65",
-      "picture": "https://images.unsplash.com/photo-1504025468847-0e438279542c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "time": 32,
-      "eyeColor": "green",
-      "name": "Adeline Vaughn",
-      "gender": "female",
-      "company": "CENTREXIN",
-      "email": "adelinevaughn@centrexin.com",
-      "phone": "+1 (838) 528-2475"
-    },
+   
     {
       "id": "633fcc510663b73f5830f17b",
       "isActive": true,

@@ -12,6 +12,11 @@ const Home = () => {
       .then(res => res.json())
       .then(data =>setProducts(data));
   },[])
+
+  const handleAddToCart =(product) =>{
+    console.log(product.time)
+}
+
   return (
     <div className='home'> 
     <div className="name-header">                                                                                                                                                                                                                                           
@@ -29,6 +34,7 @@ const Home = () => {
        products.map(product => <Product 
        key={product.id}
        product={product}
+       handleAddToCart={handleAddToCart}
        ></Product>)
       }
      </div>

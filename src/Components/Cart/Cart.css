@@ -38,6 +38,16 @@
 .exercise-time, .break-time-count{
     margin-top: 40px;
 }
+.exercise-time span{
+    color: grey;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.break-time-count span{
+    color: grey;
+    margin-left: 14px;
+    margin-right: 10px;
+}
 .break-time-count{
     margin-right: 20px;
 }

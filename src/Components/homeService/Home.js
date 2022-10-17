@@ -4,8 +4,10 @@ import logo from '../images/gym.jpg'
 import './Home.css';
 import Cart from '../Cart/Cart';
 
+
 const Home = () => {
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() =>{
       fetch('products.json')
@@ -14,7 +16,8 @@ const Home = () => {
   },[])
 
   const handleAddToCart =(product) =>{
-    console.log(product.time)
+    const newCart = [...cart, product];
+    setCart(newCart)
 }
 
   return (
@@ -40,10 +43,10 @@ const Home = () => {
      </div>
     </div>
      <div className="home-info">
-        <Cart></Cart>
+        <Cart cart={cart}></Cart>
      </div>
    </div>
   );
 };
 
-export default Home;<h1>hello project</h1>
+export default Home;

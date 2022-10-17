@@ -2,9 +2,15 @@ import React from 'react';
 import picture from '../images/412.jpg'
 import './Cart.css'
 
-const Cart = () => {
+const Cart = ({cart}) => {
+    console.log(cart)
+
+    let time = 0;
+    for(const product of cart) {
+        time = time + product.time;
+    }
     return (
-        <div>
+        <div className='cart'>
             <div className="information">
                <div className='personal-info'>
                     <div>
@@ -41,11 +47,10 @@ const Cart = () => {
                 </div>
             </div>
 
-
             <div className="exercise-container">
                 <h2>Exercise Details</h2>
 
-                <h3 className='exercise-time'>Exercise time <span>000</span> seconds</h3>
+                <h3 className='exercise-time'>Exercise time <span>{time}</span> seconds</h3>
 
                 <h3 className='break-time-count'>Break time <span>000</span> seconds</h3>
 

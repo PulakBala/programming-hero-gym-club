@@ -1,14 +1,15 @@
-import React from 'react';
+
 import picture from '../images/412.jpg'
 import './Cart.css'
 
 const Cart = ({cart}) => {
-    console.log(cart)
-
     let time = 0;
     for(const product of cart) {
         time = time + product.time;
     }
+   const addToBrek =(data)=>{
+    console.log(data);
+   }
     return (
         <div className='cart'>
             <div className="information">
@@ -39,11 +40,11 @@ const Cart = ({cart}) => {
             <div className="break-container">
                 <h2>Add A Break</h2>
                 <div className='break-time'>
-                    <h3>10s</h3>
-                    <h3>20s</h3>
-                    <h3>30s</h3>
-                    <h3>40s</h3>
-                    <h3>50s</h3>
+                    <button onClick={addToBrek}>10s</button>
+                    <button onClick={addToBrek}>20s</button>
+                    <button onClick={addToBrek}>30s</button>
+                    <button onClick={addToBrek}>40s</button>
+                    <button onClick={addToBrek}>50s</button>
                 </div>
             </div>
 

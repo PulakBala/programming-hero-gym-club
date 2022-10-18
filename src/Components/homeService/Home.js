@@ -43,7 +43,9 @@ const Home = () => {
      </div>
     </div>
      <div className="home-info">
-        <Cart cart={cart}></Cart>
+        <Cart 
+        cart={cart} 
+        ></Cart>
      </div>
    </div>
   );

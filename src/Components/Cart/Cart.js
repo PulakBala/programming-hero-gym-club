@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import picture from '../images/412.jpg'
 import './Cart.css'
 
@@ -7,9 +8,9 @@ const Cart = ({cart}) => {
     for(const product of cart) {
         time = time + product.time;
     }
-   const addToBrek =(data)=>{
-    console.log(data);
-   }
+
+   const [data, setData] = useState(0);
+
     return (
         <div className='cart'>
             <div className="information">
@@ -40,11 +41,11 @@ const Cart = ({cart}) => {
             <div className="break-container">
                 <h2>Add A Break</h2>
                 <div className='break-time'>
-                    <button onClick={addToBrek}>10s</button>
-                    <button onClick={addToBrek}>20s</button>
-                    <button onClick={addToBrek}>30s</button>
-                    <button onClick={addToBrek}>40s</button>
-                    <button onClick={addToBrek}>50s</button>
+                    <button onClick={()=> setData(10)}>10</button>
+                    <button onClick={()=> setData(20)}>20s</button>
+                    <button onClick={()=> setData(30)}>30s</button>
+                    <button onClick={()=> setData(40)}>40s</button>
+                    <button onClick={()=> setData(50)}>50s</button>
                 </div>
             </div>
 
@@ -53,7 +54,7 @@ const Cart = ({cart}) => {
 
                 <h3 className='exercise-time'>Exercise time <span>{time}</span> seconds</h3>
 
-                <h3 className='break-time-count'>Break time <span>000</span> seconds</h3>
+                <h3 className='break-time-count'>Break time <span>{data}</span> seconds</h3>
 
                 <button className='btn-activity'>Activity Completed</button>
             </div>

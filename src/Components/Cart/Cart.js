@@ -41,11 +41,11 @@ const Cart = ({cart}) => {
             <div className="break-container">
                 <h2>Add A Break</h2>
                 <div className='break-time'>
-                    <button onClick={()=> setData(10)}>10</button>
-                    <button onClick={()=> setData(20)}>20s</button>
-                    <button onClick={()=> setData(30)}>30s</button>
-                    <button onClick={()=> setData(40)}>40s</button>
-                    <button onClick={()=> setData(50)}>50s</button>
+                    <button onClick={()=> localStorage.setItem('break-time',JSON.stringify(10),setData(10))}>10s</button>
+                    <button onClick={()=> localStorage.setItem('break-time',JSON.stringify(20),setData(20))}>20s</button>
+                    <button onClick={()=> localStorage.setItem('break-time',JSON.stringify(30),setData(30))}>30s</button>
+                    <button onClick={()=> localStorage.setItem('break-time',JSON.stringify(40),setData(40))}>40s</button>
+                    <button onClick={()=> localStorage.setItem('break-time',JSON.stringify(50),setData(50))}>50s</button>
                 </div>
             </div>
 

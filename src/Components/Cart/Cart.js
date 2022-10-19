@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import picture from '../images/412.jpg'
 import './Cart.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = ({cart}) => {
     let time = 0;
@@ -10,6 +12,10 @@ const Cart = ({cart}) => {
     }
 
    const [data, setData] = useState(0);
+
+   const toasty = () =>{
+    toast('You are success');
+   }
 
     return (
         <div className='cart'>
@@ -56,7 +62,8 @@ const Cart = ({cart}) => {
 
                 <h3 className='break-time-count'>Break time <span>{data}</span> seconds</h3>
 
-                <button className='btn-activity'>Activity Completed</button>
+                <button onClick={toasty} className='btn-activity'>Activity Completed</button>
+                <ToastContainer/>
             </div>
         </div>
     );
